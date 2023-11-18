@@ -1,8 +1,12 @@
 {
   "arrowParens": "avoid",
   "endOfLine": "lf",
-  "semi": true,
-  "singleQuote": true,
-  "trailingComma": "es5",
-  "plugins": ["prettier-plugin-tailwindcss"]
+  "plugins": ["prettier-plugin-tailwindcss"],
+   "prettier/prettier": [
+    "error",
+    {
+      "singleQuote": true,
+      "parser": "flow"
+    }
+  ]
 }

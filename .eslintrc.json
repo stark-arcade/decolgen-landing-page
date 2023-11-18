@@ -20,14 +20,11 @@
               "index",
               "object"
             ],
-            "newlines-between": "always",
-            "alphabetize": {
-              "order": "asc",
-              "caseInsensitive": true
-            }
+            "newlines-between": "always"
           }
         ],
-        "prettier/prettier": ["warn"]
+        "arrow-body-style": "off",
+        "prefer-arrow-callback": "off"
       },
       "extends": ["prettier"]
     }
