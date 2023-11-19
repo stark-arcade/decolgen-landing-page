@@ -61,3 +61,11 @@ body {
     -webkit-text-fill-color: transparent;
   }
 }
+.custom_title {
+  text-shadow:
+    3px 3px 0 #fff,
+    -2px -2px 0 #fff,
+    3px -2px 0 #fff,
+    -2px 3px 0 #fff,
+    3px 3px 0 #fff;
+}

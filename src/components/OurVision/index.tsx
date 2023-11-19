@@ -6,16 +6,11 @@ const OurVision = () => {
   return (
     <>
       <div className="container mx-auto my-5 max-w-4xl">
-        <p
-          className="mb-5 text-center text-5xl font-black"
-          style={{
-            textShadow: "4px 4px 0px #fff",
-          }}
-        >
+        <p className=" custom_title mb-5 text-center text-5xl font-black">
           Our Vision
         </p>
-        <div className="mb-4 flex gap-4">
-          <div className="flex flex-1 flex-col gap-4">
+        <div className="mb-4 flex flex-wrap gap-4  ">
+          <div className="flex flex-1 flex-col flex-wrap gap-4 ">
             <div className="h-[500px] overflow-hidden " key="Innovation">
               <CardVision
                 content="At DecolGen Labs, our vision is to ignite the blockchain revolution, serving as a beacon for the 'Cool Generation' of innovators, businesses, and forward-thinkers. We are dedicated to demystifying blockchain technology and making its transformative power universally accessible and adaptable."

@@ -23,7 +23,9 @@ const OurProject = () => {
   return (
     <div className="container mx-auto max-w-5xl">
       <div>
-        <p>Our Project</p>
+        <p className=" custom_title mb-5 text-center text-5xl font-black">
+          Our Project
+        </p>
       </div>
       <div className="flex gap-10">
         {listProject.map(project => (

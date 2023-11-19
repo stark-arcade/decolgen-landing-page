@@ -31,7 +31,9 @@ const Partners = () => {
   return (
     <>
       <div>
-        <p>Our Partners</p>
+        <p className="custom_title mb-5 text-center text-5xl font-black">
+          Our Partners
+        </p>
         <div className="flex flex-wrap justify-center gap-10 py-10">
           {listPartner.map(part => (
             <Image

@@ -11,6 +11,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      textStroke:{
+      'default': '0.5px',
+      },
       colors: {
         header: "#202020CC",
         body: "#080C2B",
