@@ -1,5 +1,8 @@
 import type { Config } from "tailwindcss";
 
+
+
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,6 +15,7 @@ const config: Config = {
         header: "#202020CC",
         body: "#080C2B",
         card:'#0E1233',
+        title:'#202020'
       
       },
     

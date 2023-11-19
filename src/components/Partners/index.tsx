@@ -16,7 +16,7 @@ const Partners = () => {
       link: "/images/partners/flex.svg",
     },
     {
-      id: "jeddi",
+      id: "jeddiswap",
       link: "/images/partners/jeddiswap.svg",
     },
     {
@@ -34,15 +34,14 @@ const Partners = () => {
         <p>Our Partners</p>
         <div className="flex flex-wrap justify-center gap-10 py-10">
           {listPartner.map(part => (
-            <>
-              <Image
-                alt=""
-                src={part.link}
-                height={100}
-                width={100}
-                className="cursor-pointer"
-              />
-            </>
+            <Image
+              key={part.id}
+              alt=""
+              src={part.link}
+              height={100}
+              width={100}
+              className="cursor-pointer"
+            />
           ))}
         </div>
       </div>
