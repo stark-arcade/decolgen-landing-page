@@ -10,3 +10,40 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+.ka-bg-gradient-1 {
+  background: var(
+    --gradient-radiant-1,
+    linear-gradient(
+      55deg,
+      #e900a9 -36.72%,
+      #e502ac -16.52%,
+      #d806b5 5.22%,
+      #c20ec5 28.53%,
+      #a318da 53.38%,
+      #7d25f5 76.68%,
+      #6f2aff 84.45%
+    )
+  );
+}
+.ka-bg-gradient-1:hover {
+  background: white;
+  > span,
+  svg {
+    background: var(
+      --gradient-radiant-1,
+      linear-gradient(
+        55deg,
+        #e900a9 -36.72%,
+        #e502ac -16.52%,
+        #d806b5 5.22%,
+        #c20ec5 28.53%,
+        #a318da 53.38%,
+        #7d25f5 76.68%,
+        #6f2aff 84.45%
+      )
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

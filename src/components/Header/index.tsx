@@ -1,18 +1,43 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import MenuIcon from "../Icons/MenuIcon";
-import Navigation from "../Navigation";
+import { debounce, throttle } from "../../../utils/utils";
+
+import Navigation from "./Navigation";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(true);
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu);
   };
+  const [transparency, setTransparency] = useState(0.0);
+  function handleScroll() {
+    /* if (window.pageYOffset > 50) {
+      setNavbarExpanded(false);
+    } else if (window.pageYOffset < 50) {
+      setNavbarExpanded(true);
+    } */
+
+    if (window.pageYOffset > 500) {
+      setTransparency(1);
+    } else {
+      setTransparency(window.pageYOffset / 500.0);
+    }
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", throttle(debounce(handleScroll)));
+    return () =>
+      window.removeEventListener("scroll", throttle(debounce(handleScroll)));
+  }, []);
   return (
     <>
       <div className="sticky left-0 right-0 top-0 ">
-        <div className="container mx-auto my-5 flex  h-[40px] items-center justify-between rounded-3xl bg-header bg-opacity-80 p-8 ">
+        <div
+          className={`container mx-auto my-5 flex  h-[40px] items-center justify-between rounded-3xl bg-header bg-opacity-80 p-8  ${
+            transparency != 0 && "backdrop-blur-xl"
+          } `}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="23"
