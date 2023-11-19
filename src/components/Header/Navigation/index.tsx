@@ -21,7 +21,7 @@ const Navigation = () => {
   ];
   return (
     <>
-      <div className="flex items-center gap-10">
+      <div className="hidden items-center gap-10 md:flex">
         {listSeciton.map(item => (
           <div id={item.id} className="cursor-pointer text-white" key={item.id}>
             {item.label}

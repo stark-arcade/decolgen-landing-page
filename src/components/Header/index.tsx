@@ -13,12 +13,6 @@ const Header = () => {
   };
   const [transparency, setTransparency] = useState(0.0);
   function handleScroll() {
-    /* if (window.pageYOffset > 50) {
-      setNavbarExpanded(false);
-    } else if (window.pageYOffset < 50) {
-      setNavbarExpanded(true);
-    } */
-
     if (window.pageYOffset > 500) {
       setTransparency(1);
     } else {

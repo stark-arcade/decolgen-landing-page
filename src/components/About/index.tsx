@@ -8,7 +8,7 @@ const About = () => {
       <div className="container mx-auto my-5 ">
         <div className="flex w-full flex-wrap gap-10 ">
           <div className="flex-1 text-white">
-            <div className="w-full rounded-3xl bg-card p-8 py-20 text-center">
+            <div className="w-full rounded-3xl bg-card p-6 py-10 text-center md:p-8 md:py-20">
               <p className="mb-6 text-6xl font-[900]">About DeColGen</p>
               <p className="mb-10 text-lg">
                 DeColGen is a Web3 Development Lab, dedicated to exploring the

@@ -21,13 +21,13 @@ const OurProject = () => {
     },
   ];
   return (
-    <div className="container mx-auto max-w-5xl">
+    <div className="container mx-auto  md:max-w-5xl">
       <div>
         <p className=" custom_title mb-5 text-center text-5xl font-black">
           Our Project
         </p>
       </div>
-      <div className="flex gap-10">
+      <div className="flex flex-col gap-6 md:flex-row md:gap-10">
         {listProject.map(project => (
           <div
             className="h-auto flex-1 overflow-hidden rounded-3xl"
