@@ -62,6 +62,41 @@ html {
     -webkit-text-fill-color: transparent;
   }
 }
+.ka-card-gradient-1 {
+  background: white;
+  span,
+  p,
+  li {
+    background: var(
+      --gradient-radiant-1,
+      linear-gradient(
+        55deg,
+        #e900a9 -36.72%,
+        #e502ac -16.52%,
+        #d806b5 5.22%,
+        #c20ec5 28.53%,
+        #a318da 53.38%,
+        #7d25f5 76.68%,
+        #6f2aff 84.45%
+      )
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  ul {
+    list-style: none;
+  }
+  ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    height: 1rem;
+  }
+}
+
 .custom_title {
   text-shadow:
     3px 3px 0 #fff,

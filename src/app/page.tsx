@@ -7,9 +7,9 @@ import RoadMap from "@/components/Roadmap";
 
 export default function Home() {
   return (
-    <main className=" bg-body bg-cover bg-center p-4 md:p-0">
+    <main className=" bg-body bg-repeat-y  p-4 md:p-0">
       <Header />
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-6">
         <About />
         <OurVision />
         <OurProject />
