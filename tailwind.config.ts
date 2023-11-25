@@ -23,7 +23,7 @@ const config: Config = {
       },
     
       backgroundImage:{
-        'body':"url('/images/art/body_art.svg')",
+        'body_art':"url('/images/art/body_art.svg')",
         'about':"url('/images/art/post_story.png')",
       },
       

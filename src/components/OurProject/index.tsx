@@ -21,7 +21,7 @@ const OurProject = () => {
     },
   ];
   return (
-    <div className="container mx-auto  md:max-w-5xl">
+    <div className="container mx-auto py-8  md:max-w-5xl">
       <p className=" custom_title mb-5 text-center text-5xl font-black">
         Our Project
       </p>

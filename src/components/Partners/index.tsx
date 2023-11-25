@@ -46,7 +46,7 @@ const Partners = () => {
   ];
   return (
     <>
-      <div>
+      <div className="bg-[#080C2A]">
         <p className="custom_title mb-5 text-center text-5xl font-black">
           Our Partners
         </p>
