@@ -5,7 +5,7 @@ import CardProject, { CardProjectProps } from "../Card/CardProject";
 const OurProject = () => {
   const listProject: CardProjectProps[] = [
     {
-      link: "#",
+      link: "https://flexing.gg/starknet/collection/0x00bdc929a6242dd5ccf00c7a865bf6a4799f84efe779de8f6f1f354cff822341",
       image: "/images/art/face-to-see.png",
       title: "Face To See Collection",
       content:

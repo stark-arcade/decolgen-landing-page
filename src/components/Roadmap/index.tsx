@@ -2,7 +2,7 @@ import React from "react";
 
 const RoadMap = () => {
   return (
-    <div className="h-[82rem]">
+    <div className="">
       <p>dsa</p>
     </div>
   );

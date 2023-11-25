@@ -1,31 +1,47 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-
+interface PartnerProps {
+  id: string;
+  image: string;
+  url: string;
+}
 const Partners = () => {
-  const listPartner = [
+  const listPartner: PartnerProps[] = [
     {
       id: "argent",
-      link: "/images/partners/arcade_hub.svg",
+      image: "/images/partners/arcade_hub.svg",
+      url: "https://www.argent.xyz/",
     },
     {
       id: "ryglab",
-      link: "/images/partners/ryg_labs.svg",
+      image: "/images/partners/ryg_labs.svg",
+      url: "https://www.itsryg.com/",
     },
     {
       id: "flex",
-      link: "/images/partners/flex.svg",
+      image: "/images/partners/flex.svg",
+      url: "https://flexing.gg/",
     },
     {
       id: "jeddiswap",
-      link: "/images/partners/jeddiswap.svg",
+      image: "/images/partners/jeddiswap.svg",
+      url: "https://app.jediswap.xyz/#/swap",
     },
     {
-      id: "starknet",
-      link: "/images/partners/starknet.svg",
+      id: "starknetics",
+      image: "/images/partners/starknet.svg",
+      url: "https://www.starknet.io/en",
     },
     {
       id: "starknet-vn",
-      link: "/images/partners/starknet-vn.svg",
+      image: "/images/partners/starknet-vn.svg",
+      url: "https://twitter.com/starknetvietnam",
+    },
+    {
+      id: "whale-alpha",
+      image: "/images/partners/whale-alpha.jpeg",
+      url: "https://twitter.com/WhaleAlpha_",
     },
   ];
   return (
@@ -36,14 +52,15 @@ const Partners = () => {
         </p>
         <div className="flex flex-wrap justify-center gap-10 py-10">
           {listPartner.map(part => (
-            <Image
-              key={part.id}
-              alt=""
-              src={part.link}
-              height={100}
-              width={100}
-              className="cursor-pointer"
-            />
+            <Link key={part.id} href={part.url} target="_blank">
+              <Image
+                alt=""
+                src={part.image}
+                height={100}
+                width={100}
+                className="cursor-pointer rounded-full"
+              />
+            </Link>
           ))}
         </div>
       </div>

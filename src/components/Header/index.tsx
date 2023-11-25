@@ -26,10 +26,10 @@ const Header = () => {
   }, []);
   return (
     <>
-      <div className="sticky left-0 right-0 top-0 z-20">
+      <header className="sticky left-0 right-0 top-0 z-20 py-5 ">
         <div
-          className={`container mx-auto my-5 flex  h-[40px] items-center justify-between rounded-3xl bg-header bg-opacity-80 p-8  ${
-            transparency != 0 && "backdrop-blur-xl"
+          className={`container mx-auto flex  h-[40px] items-center justify-between rounded-3xl bg-header bg-opacity-80 p-8   ${
+            transparency != 0 && "backdrop-blur-xl "
           } `}
         >
           <svg
@@ -58,7 +58,7 @@ const Header = () => {
           {openMenu && <Navigation />}
           <MenuIcon isOpen={openMenu} onToggle={handleOpenMenu} />
         </div>
-      </div>
+      </header>
     </>
   );
 };
