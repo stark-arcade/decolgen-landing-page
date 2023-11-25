@@ -89,7 +89,6 @@ html {
   }
   ul li::before {
     content: "\2022";
-    color: red;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -104,4 +103,19 @@ html {
     3px -2px 0 #fff,
     -2px 3px 0 #fff,
     3px 3px 0 #fff;
+}
+
+.timeline-circle {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50vh;
+  width: 15px;
+  height: 15px;
+  max-height: 15px;
+  max-width: 15px;
+  min-height: 15px;
+  min-width: 15px;
+  border-radius: 100%;
+  background-color: #ddb4b9;
+  box-shadow: 0 0 0 8px #fff;
 }

@@ -27,15 +27,15 @@ const RoadMap = () => {
         <p className=" custom_title mb-5 text-center text-5xl font-black">
           Roadmap
         </p>
-        <div className="border-b-2  border-t-2 border-b-white  border-t-white">
-          <div className="container mx-auto max-w-4xl py-8">
-            <div>
+        <div className="border-b-2  border-t-2 border-b-white  border-t-white ">
+          <div className="container relative mx-auto flex max-w-3xl flex-col items-start justify-center py-8">
+            <div className="absolute left-[6px] h-full w-[3px] bg-white"></div>
+            <div className="flex flex-col gap-10 md:gap-20">
               {listRoadMap.map(road => (
-                <CardRoadMap
-                  key={road.id}
-                  title={road.title}
-                  content={road.content}
-                />
+                <div key={road.id} className="flex gap-10 md:gap-20">
+                  <div className="timeline-circle" />
+                  <CardRoadMap title={road.title} content={road.content} />
+                </div>
               ))}
             </div>
           </div>
