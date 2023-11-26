@@ -8,7 +8,7 @@ interface IProps {
 const CardVision = ({ title, content, image_link }: IProps) => {
   return (
     <>
-      <div className=" group h-full  w-full cursor-pointer overflow-hidden rounded-3xl bg-card">
+      <div className=" group h-full  w-full cursor-pointer overflow-hidden rounded-3xl bg-card ">
         <div className=" relative  h-full   p-8 transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className=" absolute inset-0 flex h-full w-full flex-col items-center justify-center py-6 ">
             <p className=" mb-6 text-center text-3xl font-extrabold text-white md:mb-10">

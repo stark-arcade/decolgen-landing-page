@@ -18,7 +18,7 @@ const CardProject = ({
 }: CardProjectProps) => {
   return (
     <div className=" flex h-full flex-col justify-between bg-white p-8 ">
-      <div className="  flex flex-col">
+      <div className="  mb-6 flex flex-col">
         <div className="mb-6 overflow-hidden">
           <Image
             src={image}
@@ -28,7 +28,7 @@ const CardProject = ({
           />
         </div>
         <p
-          className={`text-title text-xl font-black ${
+          className={`text-xl font-black text-title ${
             title.includes("Starknet Arcade Hub") ? "mb-4" : "mb-6"
           }`}
         >

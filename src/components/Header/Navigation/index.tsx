@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Navigation = () => {
   const listSeciton = [
@@ -19,13 +20,18 @@ const Navigation = () => {
       label: "Contact Us",
     },
   ];
+
   return (
     <>
       <div className="hidden items-center gap-10 md:flex">
         {listSeciton.map(item => (
-          <div id={item.id} className="cursor-pointer text-white" key={item.id}>
+          <Link
+            href={`#${item.id}`}
+            className="cursor-pointer text-white"
+            key={`${item.id}-link`}
+          >
             {item.label}
-          </div>
+          </Link>
         ))}
       </div>
     </>

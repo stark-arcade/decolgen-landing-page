@@ -46,21 +46,26 @@ const Partners = () => {
   ];
   return (
     <>
-      <div className="bg-[#080C2A]">
-        <p className="custom_title mb-5 text-center text-5xl font-black">
+      <div className="bg-[#080C2A] py-8" id="partners">
+        <p className="custom_title mb-8 text-center text-5xl font-black">
           Our Partners
         </p>
-        <div className="flex flex-wrap justify-center gap-10 py-10">
-          {listPartner.map(part => (
-            <Link key={part.id} href={part.url} target="_blank">
-              <Image
-                alt=""
-                src={part.image}
-                height={100}
-                width={100}
-                className="cursor-pointer rounded-full"
-              />
-            </Link>
+        <div className="flex h-full flex-wrap justify-center gap-10 md:h-[200px]">
+          {listPartner.map((part, index) => (
+            <div
+              key={part.id}
+              className={`flex ${index % 2 == 0 ? "items-start" : "items-end"}`}
+            >
+              <Link key={part.id} href={part.url} target="_blank">
+                <Image
+                  alt=""
+                  src={part.image}
+                  height={100}
+                  width={100}
+                  className="cursor-pointer rounded-full"
+                />
+              </Link>
+            </div>
           ))}
         </div>
       </div>

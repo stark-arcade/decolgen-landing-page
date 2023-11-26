@@ -34,7 +34,10 @@ const RoadMap = () => {
   ];
   return (
     <>
-      <p className="custom_title mb-5 text-center text-5xl font-black">
+      <p
+        className="custom_title mb-5 text-center text-5xl font-black"
+        id="road_map"
+      >
         Roadmap
       </p>
       <div className="bg-[#202020]">
@@ -44,7 +47,7 @@ const RoadMap = () => {
             <div className="flex flex-col ">
               {listRoadMap.map(road => (
                 <div key={road.id} className="relative flex gap-20 py-[180px]">
-                  <p className="ka-text-gradient-1 timeline-title flex-grow text-5xl font-extrabold">
+                  <p className="ka-text-gradient-1 timeline-title  text-5xl font-extrabold">
                     {road.label}
                   </p>
 
