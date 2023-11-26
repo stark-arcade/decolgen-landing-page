@@ -5,7 +5,7 @@ import CardVision from "../Card/CardVision";
 const OurVision = () => {
   return (
     <>
-      <div className="container mx-auto my-5 max-w-4xl">
+      <div className="container mx-auto my-5 lg:max-w-4xl">
         <p className=" custom_title mb-5 text-center text-5xl font-black">
           Our Vision
         </p>

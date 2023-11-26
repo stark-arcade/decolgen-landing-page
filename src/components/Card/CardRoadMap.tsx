@@ -6,7 +6,7 @@ interface IProps {
 }
 const CardRoadMap = ({ title, content }: IProps) => {
   return (
-    <div className="ka-card-gradient-1 flex w-[300px] flex-col gap-10 rounded-3xl p-6 md:w-[520px]">
+    <div className="ka-card-gradient-1 flex h-fit  w-[300px] flex-col gap-10 rounded-3xl p-6 md:w-[520px]">
       {title && <p className="text-3xl font-extrabold">{title}</p>}
 
       <ul className="">
