@@ -3,17 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "TARGET_ENV=decolgen next dev",
+    "build": "TARGET_ENV=decolgen next build",
     "start": "NODE_ENV='production' next start",
     "lint": "next lint",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "postseo": "next-sitemap"
   },
   "dependencies": {
     "cssnano": "^6.0.1",
     "next": "14.0.1",
+    "next-seo": "^6.4.0",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-ga4": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.decolgenlabs.com/
+
+# Sitemaps
+Sitemap: https://www.decolgenlabs.com/sitemap.xml
