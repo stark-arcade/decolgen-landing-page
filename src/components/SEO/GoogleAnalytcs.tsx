@@ -5,7 +5,7 @@ const GoogleAnalytics = ({ ga_id }: { ga_id: string }) => (
     <Script
       async
       src={`https://www.googletagmanager.com/gtag/js? 
-      id=${ga_id}`}
+      id=${ga_id || "G-PFKLC7J0BH"}`}
     ></Script>
     <Script
       id="google-analytics"

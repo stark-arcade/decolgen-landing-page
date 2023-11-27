@@ -58,7 +58,7 @@ const Partners = () => {
             >
               <Link key={part.id} href={part.url} target="_blank">
                 <Image
-                  alt=""
+                  alt={`decolgenlabs-partner${part.id}`}
                   src={part.image}
                   height={100}
                   width={100}
