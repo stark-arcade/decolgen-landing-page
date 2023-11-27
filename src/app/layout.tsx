@@ -4,6 +4,8 @@ import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import Favicon from "/public/favicon.ico";
 
+import GoogleAnalytics from "@/components/SEO/GoogleAnalytcs";
+
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>{children}</body>
+      <GoogleAnalytics />
     </html>
   );
 }
