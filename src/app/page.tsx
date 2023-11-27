@@ -5,12 +5,10 @@ import OurProject from "@/components/OurProject";
 import OurVision from "@/components/OurVision";
 import Partners from "@/components/Partners";
 import RoadMap from "@/components/Roadmap";
-import SEOHead from "@/components/SEO/SEOHead";
 
 export default function Home() {
   return (
     <>
-      <SEOHead />
       <main className=" bg-body   p-4 md:p-0">
         <Header />
         <div className="flex flex-col gap-6">
