@@ -1,11 +1,11 @@
 import Script from "next/script";
 
-const GoogleAnalytics = ({ ga_id }: { ga_id: string }) => (
+const GoogleAnalytics = () => (
   <>
     <Script
       async
       src={`https://www.googletagmanager.com/gtag/js? 
-      id=${ga_id || "G-PFKLC7J0BH"}`}
+      id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || "G-PFKLC7J0BH"}`}
     ></Script>
     <Script id="google-analytics">
       {`
@@ -14,7 +14,7 @@ const GoogleAnalytics = ({ ga_id }: { ga_id: string }) => (
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
           window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          gtag('config', '${ga_id}');
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
           ga('create', 'UA-XXXXX-Y', 'auto');
           ga('send', 'pageview');
         `}
