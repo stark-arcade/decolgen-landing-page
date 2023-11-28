@@ -21,17 +21,17 @@ const Footer = () => {
     },
     {
       id: "twitter",
-      link: "#",
+      link: "https://twitter.com/FaceToSee_",
       icon: <TwitterIcon />,
     },
     {
       id: "discord",
-      link: "#",
+      link: "https://discord.com/invite/djU2mEJcSq",
       icon: <DiscordIcon />,
     },
     {
       id: "mail",
-      link: "#",
+      link: "mailto:decolgenlabs@gmail.com",
       icon: <MailIcon />,
     },
     {
