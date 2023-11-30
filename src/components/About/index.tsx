@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <div className="container mx-auto my-5 ">
-        <div className="flex w-full flex-wrap gap-10 ">
+        <div className="flex w-full  flex-col gap-10 md:flex-row ">
           <div className="flex-1 text-white">
             <div className="w-full rounded-3xl bg-card p-6 py-10 text-center md:p-8 md:py-20 ">
               <p className=" mb-6 text-6xl font-[900] ">About DeColGen</p>
