@@ -22,7 +22,7 @@ const CardProject = ({
         <div className="mb-6 overflow-hidden">
           <Image
             src={image}
-            alt={`decolgenlabs-${title} `}
+            alt={`Decolgen Labs decolgenlabs-${title} `}
             width={500}
             height={500}
           />

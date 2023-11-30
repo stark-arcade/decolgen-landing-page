@@ -34,14 +34,14 @@ const RoadMap = () => {
   ];
   return (
     <>
-      <div className="h-full">
+      <div className="h-full ">
         <p
           className="custom_title mb-5 text-center text-5xl font-black"
           id="road_map"
         >
           Roadmap
         </p>
-        <div className="bg-[#202020]">
+        <div className="bg-roadmap bg-[#202020]">
           <div className="container mx-auto max-w-5xl ">
             <div className="relative flex flex-col items-center justify-center ">
               <div className="absolute left-[90%]  h-full w-[3px] bg-white md:left-[32%] lg:left-[34%]"></div>
@@ -49,7 +49,7 @@ const RoadMap = () => {
               {listRoadMap.map(road => (
                 <div
                   key={road.id}
-                  className=" flex h-full flex-wrap gap-10 py-10 md:h-[480px] md:flex-nowrap md:gap-20"
+                  className="  flex h-full flex-wrap gap-10 px-0 py-10 md:h-[480px] md:flex-nowrap  md:gap-20 "
                 >
                   <div className="timeline-left">
                     <p className="ka-text-gradient-1  sticky top-[50vh]  text-5xl font-extrabold">
@@ -57,7 +57,6 @@ const RoadMap = () => {
                     </p>
                   </div>
                   <div className="sticky left-[85%] top-[50vh] md:relative md:left-0 md:top-0">
-                    {" "}
                     <div className="timeline-circle " />
                   </div>
 

@@ -50,15 +50,16 @@ const Partners = () => {
         <p className="custom_title mb-8 text-center text-5xl font-black">
           Our Partners
         </p>
-        <div className="flex h-full flex-wrap justify-center gap-10 md:h-[200px]">
+        <div className="flex  h-full flex-wrap justify-center gap-10 md:h-[250px] lg:h-[200px]">
           {listPartner.map((part, index) => (
             <div
               key={part.id}
               className={`flex ${index % 2 == 0 ? "items-start" : "items-end"}`}
             >
-              <Link key={part.id} href={part.url} target="_blank">
+              <Link href={part.url} target="_blank">
                 <Image
-                  alt={`decolgenlabs-partner${part.id}`}
+                  alt={`This is Decolgen Labs | Decolgen-Labs-partner${part.id}`}
+                  title="Decolgen Labs Partner Link"
                   src={part.image}
                   height={100}
                   width={100}

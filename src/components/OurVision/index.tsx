@@ -12,13 +12,13 @@ const OurVision = () => {
         <div className="mb-4 flex flex-col  gap-4 md:flex-row ">
           <div className="flex flex-col gap-4 md:flex-1 ">
             <div
-              className="h-[400px] overflow-hidden md:h-[500px] "
+              className="h-[400px] overflow-hidden  md:h-[500px]"
               key="Innovation"
             >
               <CardVision
                 content="At DecolGen Labs, our vision is to ignite the blockchain revolution, serving as a beacon for the 'Cool Generation' of innovators, businesses, and forward-thinkers. We are dedicated to demystifying blockchain technology and making its transformative power universally accessible and adaptable."
                 title="Pioneering Digital Innovation"
-                image_link="/images/art/innovation.svg"
+                image_link="/images/art/vision/innovation.svg"
               />
             </div>
             <div
@@ -28,7 +28,7 @@ const OurVision = () => {
               <CardVision
                 content="At DecolGen Labs, our vision is to ignite the blockchain revolution, serving as a beacon for the 'Cool Generation' of innovators, businesses, and forward-thinkers. We are dedicated to demystifying blockchain technology and making its transformative power universally accessible and adaptable."
                 title="Revolutionizing Tokenization"
-                image_link="/images/art/tokenization.svg"
+                image_link="/images/art/vision/tokenization.svg"
               />
             </div>
           </div>
@@ -40,7 +40,7 @@ const OurVision = () => {
             <CardVision
               content="At DecolGen Labs, our vision is to ignite the blockchain revolution, serving as a beacon for the 'Cool Generation' of innovators, businesses, and forward-thinkers. We are dedicated to demystifying blockchain technology and making its transformative power universally accessible and adaptable."
               title="Customized Blockchain Solutions"
-              image_link="/images/art/blockchain.svg"
+              image_link="/images/art/vision/blockchain.svg"
             />
           </div>
         </div>
@@ -49,7 +49,7 @@ const OurVision = () => {
             <CardVision
               content="At DecolGen Labs, our vision is to ignite the blockchain revolution, serving as a beacon for the 'Cool Generation' of innovators, businesses, and forward-thinkers. We are dedicated to demystifying blockchain technology and making its transformative power universally accessible and adaptable."
               title="Tailored Product and Service Development"
-              image_link="/images/art/development.svg"
+              image_link="/images/art/vision/development.svg"
             />
           </div>
           <div className="flex flex-1 flex-col gap-4">
@@ -60,7 +60,7 @@ const OurVision = () => {
               <CardVision
                 content="At DecolGen Labs, our vision is to ignite the blockchain revolution, serving as a beacon for the 'Cool Generation' of innovators, businesses, and forward-thinkers. We are dedicated to demystifying blockchain technology and making its transformative power universally accessible and adaptable."
                 title="Joining the DecolGen Movement"
-                image_link="/images/art/movement.svg"
+                image_link="/images/art/vision/movement.svg"
               />
             </div>
             <div
@@ -70,7 +70,7 @@ const OurVision = () => {
               <CardVision
                 content="At DecolGen Labs, our vision is to ignite the blockchain revolution, serving as a beacon for the 'Cool Generation' of innovators, businesses, and forward-thinkers. We are dedicated to demystifying blockchain technology and making its transformative power universally accessible and adaptable."
                 title="Interchain Connectivity"
-                image_link="/images/art/connectivity.svg"
+                image_link="/images/art/vision/connectivity.svg"
               />
             </div>
           </div>

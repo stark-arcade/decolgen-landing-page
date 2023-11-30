@@ -19,13 +19,13 @@ const CardVision = ({ title, content, image_link }: IProps) => {
                 src={image_link}
                 height={300}
                 width={300}
-                alt={title}
+                alt={`Decolgen Labs decolgen-labs-${title}`}
                 className="max-h-[200px] max-w-[200px] md:max-h-[300px] md:max-w-[300px]"
               />
             </div>
           </div>
           <div className="backface-hidden absolute  inset-0 h-full w-full bg-white [backface-visibility:hidden] [transform:rotateY(180deg)]">
-            <div className="flex h-full w-full flex-col items-center justify-center p-8 align-middle">
+            <div className="align-middl flex h-full w-full flex-col items-center justify-center p-8 text-black">
               <p className="mb-6 text-2xl font-extrabold">{title}</p>
               <p>{content}</p>
             </div>

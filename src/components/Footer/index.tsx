@@ -5,7 +5,6 @@ import TwitterIcon from "../Icons/TwitterIcon";
 import FacetoSeeIcon from "../Icons/FacetoSeeIcon";
 import DiscordIcon from "../Icons/DiscordIcon";
 import MailIcon from "../Icons/MailIcon";
-import FormIcon from "../Icons/FormIcon";
 
 interface LinkSocialProps {
   id: string;
@@ -34,11 +33,6 @@ const Footer = () => {
       link: "mailto:decolgenlabs@gmail.com",
       icon: <MailIcon />,
     },
-    {
-      id: "form",
-      link: "#",
-      icon: <FormIcon />,
-    },
   ];
   return (
     <div
@@ -55,6 +49,7 @@ const Footer = () => {
               key={social.id}
               target="_blank"
               href={social.link}
+              aria-label={`Decolgen Labs footer-${social.id}`}
               className=" group text-white"
             >
               {social.icon}
@@ -63,7 +58,7 @@ const Footer = () => {
         ))}
       </div>
 
-      <p className="text-white">@2023 DeColgen - All Rights Reserved</p>
+      <p className="text-white">@2023 DeColgen Labs - All Rights Reserved</p>
     </div>
   );
 };

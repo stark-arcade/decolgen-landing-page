@@ -29,15 +29,18 @@ const Header = () => {
     <>
       <header className="sticky left-0 right-0 top-0 z-20 py-5 ">
         <div
-          className={`container mx-auto flex  h-[40px] items-center justify-between rounded-3xl bg-header bg-opacity-80 p-8   ${
+          className={`container mx-auto flex  h-[40px] items-center justify-between ${
+            openMenu && "rounded-b-none rounded-t-3xl"
+          }  bg-header bg-opacity-80 p-8 md:rounded-3xl  ${
             transparency != 0 && "backdrop-blur-xl "
-          } `}
+          } relative`}
         >
           <Link href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="23"
               height="40"
+              aria-label="Decolgen Labs Logo"
               viewBox="0 0 23 40"
               fill="none"
             >

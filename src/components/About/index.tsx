@@ -23,8 +23,8 @@ const About = () => {
             <div
               className="h-full min-h-[390px] w-full rounded-3xl bg-about bg-cover bg-center text-center"
               role="img"
-              title="decolgenlabs about"
-              aria-label="decolgenlabs about"
+              title="Decolgen Labs about-decolgenlab"
+              aria-label="Decolgen Labs about-decolgenlab"
             ></div>
           </div>
         </div>

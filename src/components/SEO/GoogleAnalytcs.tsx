@@ -9,6 +9,7 @@ const GoogleAnalytics = () => (
     ></Script>
     <Script id="google-analytics">
       {`
+      
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());

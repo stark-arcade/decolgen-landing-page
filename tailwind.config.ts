@@ -23,8 +23,10 @@ const config: Config = {
       },
     
       backgroundImage:{
-        'body_art':"url('/images/art/body_art.svg')",
+        'body_art':"url('/images/art/bg/background_main.svg')",
+        "roadmap":"url('/images/art/bg/roadmap.svg')",
         'about':"url('/images/art/post_story.png')",
+        'notfound':"url('/images/art/bg/notfound.svg')",
       },
       
     },
