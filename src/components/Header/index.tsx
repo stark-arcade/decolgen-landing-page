@@ -25,13 +25,19 @@ const Header = () => {
     return () =>
       window.removeEventListener("scroll", throttle(debounce(handleScroll)));
   }, []);
+
+  useEffect(() => {
+    if (window.innerWidth < 600) {
+      setOpenMenu(false);
+    }
+  }, []);
   return (
     <>
       <header className="sticky left-0 right-0 top-0 z-20 py-5 ">
         <div
           className={`container mx-auto flex  h-[40px] items-center justify-between ${
             openMenu && "rounded-b-none rounded-t-3xl"
-          }  bg-header bg-opacity-80 p-8 md:rounded-3xl  ${
+          }  rounded-3xl bg-header bg-opacity-80 p-8  ${
             transparency != 0 && "backdrop-blur-xl "
           } relative`}
         >
