@@ -32,7 +32,7 @@ const Navigation = () => {
         {listSeciton.map(item => {
           return (
             <Link
-              href={`#${item.id}`}
+              href={`/#${item.id}`}
               className={`cursor-pointer rounded-lg p-2 text-lg font-bold text-white  ${
                 active == item.id ? "bg-gradient-1" : "ka-nav"
               } `}
