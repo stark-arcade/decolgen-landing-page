@@ -28,7 +28,7 @@ const Navigation = () => {
 
   return (
     <>
-      <div className="absolute left-0 top-full flex w-full flex-col items-end gap-2 rounded-b-3xl bg-inherit bg-opacity-80 pr-6 backdrop-blur-xl md:relative  md:top-0 md:w-fit md:flex-row md:items-center md:gap-10 md:bg-transparent md:pr-0 md:backdrop-blur-none">
+      <div className="absolute left-0 top-full flex w-full flex-col items-end gap-2 rounded-b-3xl bg-inherit  pr-6  md:relative  md:top-0 md:w-fit md:flex-row md:items-center md:gap-10 md:bg-transparent md:pr-0 ">
         {listSeciton.map(item => {
           return (
             <Link

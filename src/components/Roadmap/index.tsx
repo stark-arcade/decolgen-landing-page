@@ -41,7 +41,7 @@ const RoadMap = () => {
         >
           Roadmap
         </p>
-        <div className="bg-roadmap bg-[#202020]">
+        <div className="bg-[#090909] bg-roadmap">
           <div className="container mx-auto max-w-5xl ">
             <div className="relative flex flex-col items-center justify-center ">
               <div className="absolute left-[90%]  h-full w-[3px] bg-white md:left-[32%] lg:left-[34%]"></div>
