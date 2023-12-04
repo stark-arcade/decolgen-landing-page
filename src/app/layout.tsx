@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "DecolGen Labs is a Web3 Development Lab, dedicated to exploring the identity and ownership of digital assets in integration with gamified experience to push forward the multi-chain adoption of NFT",
     images: [
       {
-        url: "https://www.decolgenlabs.com/images/art/post_story.png",
+        url: "https://www.decolgenlabs.com/images/banner.png",
         width: 1200,
         height: 600,
         type: "image/png",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "DecolGen Labs",
     description:
       "DecolGen Labs is a Web3 Development Lab, dedicated to exploring the identity and ownership of digital assets in integration with gamified experience to push forward the multi-chain adoption of NFT",
-    images: "https://www.decolgenlabs.com/images/art/post_story.png",
+    images: "https://www.decolgenlabs.com/images/banner.png",
     site: "https://www.decolgenlabs.com/",
     creator: "@FaceToSee_",
   },
