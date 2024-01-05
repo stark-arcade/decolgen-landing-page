@@ -12,7 +12,7 @@ const OurProject = () => {
         "A collection of 666 unique NFTs representing The Nature of Humans. Face To See aims to build a vibrant community of Starknet True Human through exploring the human inner-self and self-discovery concept.",
     },
     {
-      link: "#",
+      link: "https://coinflip.decolgenlabs.com/",
       image: "/images/art/project/arcade_hub.png",
       title: "Starknet Arcade Hub",
       content:
