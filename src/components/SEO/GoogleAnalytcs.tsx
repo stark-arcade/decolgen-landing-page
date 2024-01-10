@@ -23,8 +23,8 @@ const GoogleAnalytics = () => (
             'cookie_expires': 28 * 24 * 60 * 60 
           }
           );
-          ga('create', 'UA-XXXXX-Y', 'auto');
-          ga('send', 'pageview');
+          gtag('create', 'UA-XXXXX-Y', 'auto');
+          gtag('send', 'pageview');
         `}
     </Script>
   </>
