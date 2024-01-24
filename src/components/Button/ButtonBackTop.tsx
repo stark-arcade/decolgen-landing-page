@@ -22,7 +22,7 @@ const ButtonBackTop = () => {
     <>
       {showTopBtn && (
         <button
-          className="group cursor-pointer text-[#202020] "
+          className="group cursor-pointer text-[#202020]"
           onClick={goToTop}
         >
           <svg

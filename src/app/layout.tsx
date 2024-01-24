@@ -9,6 +9,7 @@ import GoogleAnalytics from "@/components/SEO/GoogleAnalytcs";
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.decolgenlabs.com/"),
   title: "DecolGen Labs",
   description:
     "DecolGen Labs is a Web3 Development Lab, dedicated to exploring the identity and ownership of digital assets in integration with gamified experience to push forward the multi-chain adoption of NFT",
@@ -18,7 +19,12 @@ export const metadata: Metadata = {
     apple: Favicon.src,
     other: { rel: "apple-touch-icon-precomposed", url: Favicon.src },
   },
-  keywords: ["Decolgen Labs", "Decolgenlabs", "Starknet Decolgen", "Decolgen"],
+  keywords: [
+    "Decolgen labs",
+    "Decolgenlabs",
+    "Who is Decolgen labs",
+    "What is Decolgen labs",
+  ],
   openGraph: {
     title: "DecolGen Labs",
     description:

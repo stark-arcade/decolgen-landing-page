@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "cssnano": "^6.0.1",
+    "framer-motion": "^11.0.3",
     "next": "13.5.1",
     "next-sitemap": "^4.2.3",
     "react": "^18",

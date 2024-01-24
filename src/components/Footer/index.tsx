@@ -5,7 +5,7 @@ import TwitterIcon from "../Icons/TwitterIcon";
 import FacetoSeeIcon from "../Icons/FacetoSeeIcon";
 import DiscordIcon from "../Icons/DiscordIcon";
 import MailIcon from "../Icons/MailIcon";
-
+import GithubIcon from "../Icons/GithubIcon";
 interface LinkSocialProps {
   id: string;
   link: string;
@@ -15,8 +15,13 @@ const Footer = () => {
   const linkSocial: LinkSocialProps[] = [
     {
       id: "home",
-      link: "#",
+      link: "/",
       icon: <FacetoSeeIcon />,
+    },
+    {
+      id: "github",
+      link: "https://github.com/decolgen-labs",
+      icon: <GithubIcon className="h-8 w-8" />,
     },
     {
       id: "twitter",
